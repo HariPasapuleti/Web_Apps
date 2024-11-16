@@ -82,3 +82,18 @@ With the dummy "C" added, the processed result will be:
 This ensures that the list starts with "C", followed by the user-provided SMILES strings.
 
 <!-- Have to make 3min description -->
+
+
+# Description
+
+The LogS value, or logarithmic solubility, generally ranges from negative values to slightly positive values, depending on the solubility of the molecule.
+
+Here's a breakdown of typical LogS values:
+
+Highly Soluble Molecules: LogS values around 0 or above indicate that the molecule is highly soluble in water. A LogS of 0 means the solubility is approximately 1 mol/L, which is relatively high for organic compounds.
+
+Moderately Soluble Molecules: LogS values between -1 and 0 show moderate solubility. Molecules in this range have a reasonable degree of solubility but may start to show limitations in aqueous environments.
+
+Poorly Soluble Molecules: LogS values below -1 suggest low solubility, and values below -3 indicate that the compound is very poorly soluble or nearly insoluble in water. Compounds with LogS below -4 are typically regarded as practically insoluble.
+
+The range of LogS values you can expect depends on the dataset the model was trained on. For most organic molecules in typical datasets, the LogS values often range from -6 to +1.
