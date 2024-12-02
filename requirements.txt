@@ -3,3 +3,4 @@ numpy
 pandas
 Pillow
 rdkit
+scikit-learn
