@@ -87,7 +87,12 @@ X = generate(SMILES)
 X[1:] # Skips the dummy first item
 
 load_model = pickle.load(open('solubility_model.pkl', 'rb')) # rb Binary read mode
- 
+try:
+    load_model.predict([[0, 0, 0, 0]])  # Dummy data to test the model
+except Exception as e:
+    st.error(f"Model validation failed: {e}")
+    st.stop()
+    
 prediction = load_model.predict(X)
 #prediction_proba = load_model.predict_proba(X)
 
