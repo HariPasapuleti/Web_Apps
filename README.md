@@ -46,7 +46,7 @@ Make sure you have the following installed:
 3. Run the app:
 
     ```bash
-    streamlit run solubility_prediction_app.py
+    streamlit run app.py
     ```
 
 4. Open the app in your browser.
