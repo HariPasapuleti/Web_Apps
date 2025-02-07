@@ -58,7 +58,7 @@ def generate(smiles, verbose=False): # Verbose provides the extra information ab
 
 image = Image.open('Solubility_Prediction.png')
 
-st.image(image, use_column_width=True)
+st.image(image, use_container_width=True)
 
 st.write("""
 # Molecular Solubility Prediction Web App
